@@ -1,0 +1,155 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+
+body {
+    margin: 0;
+    width: 800px;
+    padding: 0px;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    background-color: #f4f4f4;
+}
+/* Header */
+header {
+    background: blue;
+    color: whitesmoke;
+    text-align: center;
+  }
+header a{
+    color: white;
+    text-align: center;
+  }
+header #yimmie {
+    padding: 5px;
+    color: white
+}
+nav {
+    color: white;
+    height: 40px;
+    margin: 0;
+    background: green;
+    width: 100%;
+}
+nav li {
+    display: inline;
+    padding: 0 10px 0 10px;
+  }
+nav a{
+    color: white;
+}
+ul {
+    margin: 0;
+    padding: 5px;
+}
+
+/* absolute */
+
+.relative {
+    position: relative;
+    top: 0px;
+    width: 800px;
+    height: 230px;
+}
+.absoluteleft {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+.absoluteright {
+    float: right;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+}
+.container {
+    width: 100%;
+    height: 40px;
+    background: blue;
+    margin: auto;
+    overflow: hidden;
+}
+.container-1 {
+    width: 100%;
+    height: 40px;
+    background: pink;
+    margin: auto;
+    overflow: hidden;
+}
+.container-2 {
+    width: 100%;
+    height: 80px;
+    background: #932323;
+    margin: auto;
+    overflow: hidden;
+}
+.container-3 {
+    width: 100%;
+    height: 100%;
+    background: #8CF3F0;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Article */
+#my-article {
+    min-height: 5px;
+    text-align: center;
+    color: white;
+    width: 66%;
+}
+#my-article a{
+    margin-top: 5px;
+    color: white;
+    margin-bottom: 20px;
+}
+#section-one{
+    background: pink;
+    text-align: center;
+    width: 66%;
+}
+#section-one a{
+    margin-top: 5px;
+    color: white;
+    margin-bottom: 40px;
+}
+#section-two{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    background: pink;
+    width: 66%;
+}
+#section-two a{
+    margin-top: 3px;
+    margin-bottom: 40px;
+}
+/* aside */
+#boxes {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 230px;
+    margin-top: 0;
+    padding: 0;
+    width: 34%;
+    text-align: center;
+}
+#boxes a{
+    margin-top: 5px;
+    color: white;
+    margin-bottom: 110px;
+}
+/* Footer */
+
+footer {
+    background: green;
+    color: whitesmoke;
+    height: 40px;
+    text-align: center;
+}
+footer a{
+    color: white;
+    margin: 0px;
+}

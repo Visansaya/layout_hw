@@ -1,0 +1,163 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+
+body {
+    margin: 0;
+    width: 800px;
+    padding: 0px;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    background-color: #f4f4f4;
+  }
+/* Header */
+
+  header {
+    background: blue;
+    color: white;
+    text-align: center;
+    padding-top: 0px;
+    text-align: center;
+  }
+header a{
+    color: white;
+  }
+header #yimmie {
+    padding: 5px;
+    color: white
+    text-align: center;
+  }
+header #yimmie a{
+    margin: 0;
+  }
+
+nav {
+    color: white;
+    height: 40px;
+    margin: 0;
+    background: green;
+    width: 100%;
+}
+nav li {
+    display: inline;
+    padding: 0 10px 0 10px;
+  }
+nav a{
+    color: white;
+}
+
+ul {
+    margin: 0;
+    min-height: 10px;
+    padding: 5px;
+}
+/* relative */
+
+.relative {
+    position: relative;
+    top: 0px;
+    width: 800px;
+    height: 230px;
+}
+.absoluteleft {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+.absoluteright {
+    position: relative;
+    width: 34%;
+    top: -230px;
+    right: -528px;
+}
+.container {
+    width: 100%;
+    height: 40px;
+    background: blue;
+    margin: auto;
+    overflow: hidden;
+}
+.container-1 {
+    width: 66%;
+    height: 40px;
+    background: pink;
+    overflow: hidden;
+}
+.container-2 {
+    width: 100%;
+    height: 80px;
+    background: #932323;
+    margin: auto;
+    overflow: hidden;
+}
+.container-3 {
+    width: 100%;
+    height: 100%;
+    background: #8CF3F0;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Article */
+#my-article {
+    min-height: 5px;
+    text-align: center;
+    color: white;
+    text-align: center;    
+}
+#my-article a{
+    margin-top: 5px;
+    color: white;
+    margin-bottom: 20px;
+}
+#section-one{
+    background: pink;
+    width: 66%;
+    text-align: center;
+}
+#section-one a{
+    margin-top: 5px;
+    color: white;
+    margin-bottom: 40px;
+}
+#section-two{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+    background: pink;
+    width: 66%;
+    text-align: center;
+}
+#section-two a{
+    margin-top: 3px;
+    margin-bottom: 40px;
+}
+/* aside */
+#boxes {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 230px;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+#boxes a{
+    margin-top: 5px;
+    color: white;
+}
+/* Footer */
+
+footer {
+    background: green;
+    color: white;
+    margin: 0px;
+    width: 800px;
+    height: 40px;
+    text-align: center;
+}
+footer a{
+    color: white;
+    margin: 0px;
+}
