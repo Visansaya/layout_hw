@@ -1,165 +1,167 @@
 /** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
 
 body {
-    margin: 0;
-    padding: 0px;
-    border: 0;
-    font-size: 100%;
+    width: 800px;
     font: inherit;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
     background-color: #f4f4f4;
   }
-
-/* absolute */
-
-.relative {
-    position: relative;
-    top: 0px;
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
     width: 800px;
-    height: 192px;
-}
-.absoluteleft {
-    position: absolute;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-}
-.absoluteright {
-    float: right;
-    width: 100%;
-    top: 0px;
-    right: 0px;
-}
-.container {
-    width: 100%;
-    background: blue;
-    margin: auto;
+    height: 350px;
+    background:lightgray;
     overflow: hidden;
-}
-.container-1 {
-    width: 100%;
-    background: pink;
-    margin: auto;
-    overflow: hidden;
-}
-.container-2 {
-    width: 100%;
-    background: #932323;
-    margin: auto;
-    overflow: hidden;
-}
-.container-3 {
-    width: 100%;
-    height: 100%;
-    background: #8CF3F0;
-    margin: auto;
-    overflow: hidden;
-}
 
-ul {
-    margin: 0;
-    min-height: 10px;
-    padding: 20px;
-    background-size: cover;
 }
-
-  /* Header */
-header {
-    background: blue;
-    color: whitesmoke;
+/* Header */
+.flexbox-container1 {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background:blue;
+    flex-shrink: 0;    
+}
+.my-header {
     text-align: center;
-    padding-top: 5px;
-    min-height: 20px;
-  }
+    width: 100%;
+    height: 40px;
+}
 header a{
     color: white;
-    text-align: center;
-  }
-header #yimmie {
-    Float: none;
-    padding: 10px;
-    color: white
-  }
-header #yimmie h4{
-    margin: 0;
-    text-align: center;
-  }
-nav {
-    color: white;
-    margin: 0;
-    background: green;
-    width: 100%;
 }
+/* Nav */
+.flexbox-container2 {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: green;
+    flex-shrink: 0;  
+}
+nav {
+    width: 100%;
+    height: 40px;
+    background-color: green;
+
+  }
 nav li {
-    display: inline;
+    display: -webkit-inline-flex;
     padding: 0 10px 0 10px;
   }
 nav a{
     color: white;
 }
+ul {
+    margin:0px;
+    padding: 5px;
+}
 
-nav a: :hover{
-    color: blue;
-    font-weight: bold;
-}
 /* Article */
+.flexbox-container3 {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    height: 230px;
+    background-color:pink;
+    flex-shrink: 0;  
+}
+/* Item 1 */
+.flexbox-item1 {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: pink;
+    flex-shrink: 0;  
+}
 #my-article {
-    min-height: 5px;
     text-align: center;
-    color: white;
-    width: 66%;
-}
-#my-article h4{
-    margin-top: 5px;
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-}
-#section-one{
+    width: 100%;
+    height: 40px;
     background: pink;
-    width: 66%;
 }
-#section-one h4{
+#my-article a{
     margin-top: 5px;
-    float: none;
     color: white;
+}
+/* Item 2 */
+.flexbox-item2 {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #932323;
+    flex-shrink: 0;  
+}
+#section-one {
+    width: 100%;
     text-align: center;
+    background-color: #932323;
+    height: 80px;
+}
+#section-one a{
+    margin-top: 5px;
+    color: white;
     margin-bottom: 40px;
+}
+.flexbox-item3 {
+    display: flex;
+    width: 100%;
+    background-color:#932323;
+    flex-shrink: 0;  
 }
 #section-two{
-    padding-top: 5px;
-    padding-bottom: 20px;
-    color: white;
-    background: pink;
-    width: 66%;
-}
-#section-two h4{
-    margin-top: 3px;
-    float: none;
+    background: #932323;
+    width: 100%;
+    height: 80px;
     text-align: center;
-    margin-bottom: 40px;
+}
+#section-two a{
+    color: white;
 }
 /* aside */
-#boxes {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    height: 192px;
-    margin-top: 0;
-    padding: 0;
+.flexbox-container4 {
+    display: flex;
     width: 34%;
+    height: 230px;
+    background: skyblue;
+    flex-shrink: 0;  
 }
-#boxes h4{
+.flexbox-item4 {
+    display: flex;
+    width: 100%;
+    height: 230px;
+    background-color: skyblue;
+}
+#boxes {
+    height: 230px;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 100%;
+    text-align: center;
+    background: skyblue;
+}
+#boxes a{
     margin-top: 5px;
     color: white;
-    text-align: center;
-    margin-bottom: 110px;
 }
 /* Footer */
-
-footer {
+.flexbox-container5 {
+    display: flex;
+    width: 800px;
+    height: 40px;
     background: green;
-    color: whitesmoke;
+    flex-shrink: 0;  
+}
+.my-footer {
     text-align: center;
+    width: 100%;
+    height: 40px;
+    background: green;
+    text-align: center;
+}
+footer a{
+    color: white;
     padding-top: 1px;
-    min-height: 20px;
-  }
+}
